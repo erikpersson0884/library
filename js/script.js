@@ -29,8 +29,16 @@ const projects = [
         "githubLink": "https://www.github.com/erikpersson0884/readme-generator",
         "websiteLink": "https://erikpersson0884.github.io/readme-generator/",
         "icon": "description",
-        "languages": ["HTML", "CSS", "Javascript", "Node.js"]
+        "languages": ["HTML", "CSS", "Javascript"]
+    },
+    {
+        "name": "Portfolio",
+        "githubLink": "https://www.github.com/erikpersson0884/Portfolio",
+        "websiteLink": "https://erikpersson0884.github.io/Portfolio/",
+        "icon": "description",
+        "languages": ["React", "Typescript", "Node.js"]
     }
+
 ]
 
 
