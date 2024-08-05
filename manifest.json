@@ -8,9 +8,9 @@
     "theme_color": "#000",
     "icons": [
         {
-            "src": "images/favicon.ico",
+            "src": "images/erikpersson-logo.svg",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/svg+xml"
         }
     ]
 }
