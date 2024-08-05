@@ -1,7 +1,3 @@
-
-const mainDiv = document.getElementById('main');
-
-
 const projects = [
     {
         "name": "List-App",
@@ -28,24 +24,28 @@ const projects = [
         "name": "ReadMe Generator",
         "githubLink": "https://www.github.com/erikpersson0884/readme-generator",
         "websiteLink": "https://erikpersson0884.github.io/readme-generator/",
-        "icon": "description",
+        "icon": "article",
         "languages": ["HTML", "CSS", "Javascript"]
     },
     {
         "name": "Portfolio",
         "githubLink": "https://www.github.com/erikpersson0884/Portfolio",
         "websiteLink": "https://erikpersson0884.github.io/Portfolio/",
-        "icon": "description",
+        "icon": "Work",
         "languages": ["React", "Typescript", "Node.js"]
     }
 
 ]
-
-
-mainDiv.innerHTML = `
-    ${projects.map(project => `
+    
+function createProject(project) {
+    const projectHTML = `
         <li class="project">
-            <h2>${project.name}</h2>
+            <h2>
+                <span class="material-symbols-outlined">
+                    ${project.icon}
+                </span> 
+                ${project.name}
+            </h2>
 
 
 
@@ -58,6 +58,16 @@ mainDiv.innerHTML = `
                 </a>
             </nav>
         </li>
-    `).join('')}
-`;
-    
+    `;
+    return projectHTML;
+}
+
+function populateProjects() {
+    const mainDiv = document.getElementById('main');
+
+    mainDiv.innerHTML = `
+        ${projects.map(project => createProject(project)).join('')}
+    `;
+}
+
+populateProjects();

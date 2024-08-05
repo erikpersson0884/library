@@ -62,9 +62,16 @@ body {
     margin: 0 10px;
 }
 
+.project header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project h2 {
     font-family: 'Julius Sans One', 'sans-serif';
     text-align: center;
+    font-size: 1.8rem;  
 }
 
 .project nav {
