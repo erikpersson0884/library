@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kode+Mono:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    --backgroundColor: #272727;
+    --textColor: #fff;
+    --darkTextColor: #000;
+    --contrastColor: green;
+    --projectColor: #000000b9;
+    --projectLinkColor: #dfdede;
+    --borderColor: #fff;
+}
+
+body {
+
+    background: var(--backgroundColor);
+    color: var(--textColor);
+
+    font-family: 'Kode Mono';
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 2rem;
+}
+
+.project {
+    background: var(--projectColor);
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    width: 15rem;
+    height: 11em;
+    padding: 2rem;
+    border: 1px solid var(--borderColor);
+    border-radius: 1rem;
+    margin: 0 10px;
+}
+
+.project h2 {
+    font-family: 'Julius Sans One', 'sans-serif';
+    text-align: center;
+}
+
+.project nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.project a {
+    text-decoration: none;
+
+    padding: 1rem;
+}
+
+.githubLink {
+    border: 1px solid var(--contrastColor);
+    color: var(--textColor);
+}
+
+.websiteLink {
+    background: var(--textColor);
+    color: var(--darkTextColor);
+}
+
+
+.project a::after {
+    content: "";
+
+    background-color: var(--contrastColor);
+
+    display: block;
+
+    width: 0%;
+    height: .1rem;
+    margin-top: .2rem;
+
+    transition: width 0.3s ease-in-out;
+}
+
+.project a:hover::after {
+    width: 100%;
+}
