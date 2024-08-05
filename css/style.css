@@ -11,6 +11,11 @@
     --borderColor: #fff;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
 
     background: var(--backgroundColor);
@@ -25,8 +30,6 @@ body {
 
     min-width: 100vw;
     min-height: 100vh;
-    padding: 0;
-    margin: 0;
 }
 
 .main {
@@ -50,7 +53,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
 
     width: 15rem;
     height: 11em;

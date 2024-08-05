@@ -47,6 +47,8 @@ mainDiv.innerHTML = `
         <li class="project">
             <h2>${project.name}</h2>
 
+
+
             <nav>
                 <a href="${project.githubLink}" class="githubLink">
                     Github
