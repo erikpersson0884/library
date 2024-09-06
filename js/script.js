@@ -33,6 +33,13 @@ const projects = [
         "websiteLink": "https://erikpersson0884.github.io/Portfolio/",
         "icon": "Work",
         "languages": ["React", "Typescript", "Node.js"]
+    },
+        {
+        "name": "soundboardIT",
+        "githubLink": "https://www.github.com/erikpersson0884/soundboardIT",
+        "websiteLink": "https://erikpersson0884.github.io/soundboardIT/",
+        "icon": "tune",
+        "languages": ["html", "css", "javascript"]
     }
 
 ]
