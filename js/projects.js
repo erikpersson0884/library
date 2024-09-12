@@ -49,16 +49,16 @@ let projects = [
     {
         "priority": 10,
         "name": "Library",
-        "githubLink": "https://www.github.com/erikpersson0884/soundboardIT",
-        "websiteLink": "https://erikpersson0884.github.io/soundboardIT/",
+        "githubLink": "https://www.github.com/erikpersson0884/library",
+        "websiteLink": "https://erikpersson0884.github.io/library/",
         "icon": "library_books",
         "languages": ["html", "css", "javascript"]
     },
     {   
         "priority": 10,
         "name": "Pins",
-        "githubLink": "https://www.github.com/erikpersson0884/soundboardIT",
-        "websiteLink": "https://erikpersson0884.github.io/soundboardIT/",
+        "githubLink": "https://www.github.com/erikpersson0884/pins",
+        "websiteLink": "https://erikpersson0884.github.io/pins/",
         "icon": "mood",
         "languages": ["html", "css", "javascript"]
     },
