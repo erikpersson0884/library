@@ -1,8 +1,27 @@
 {
-    "theme_color":"#8936FF",
+    "name":"Library",
+    "short_name":"Erik Persson Library",
     "background_color":"#2EC6FE",
-    "icons":[{"purpose":"maskable",
-    "sizes":"512x512",
-    "src":"icon512_maskable.png",
-    "type":"image/png"},{"purpose":"any","sizes":"512x512","src":"icon512_rounded.png","type":"image/png"}],"orientation":"portrait","display":"standalone","dir":"auto","lang":"en-US","name":"Library","short_name":"Erik Persson Library","start_url":"library","scope":"library","description":"A display of projects created by Erik Persson"
+    "theme_color":"#8936FF",
+    "orientation":"portrait",
+    "display":"standalone",
+    "lang":"en-US",
+    "start_url":"/library/",
+    "scope":"/library/",
+    "description":"A display of projects created by Erik Persson",
+    "icons": [
+        {
+            "purpose":"maskable",
+            "sizes":"512x512",
+            "src":"icon512_maskable.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"192x192",
+            "src":"erkpersson-logo.svg",
+            "type":"image/svg+xml"
+        }
+        
+    ]
 }
