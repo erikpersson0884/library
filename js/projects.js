@@ -62,6 +62,14 @@ let projects = [
         "icon": "mood",
         "languages": ["html", "css", "javascript"]
     },
+    {
+        "priority": 10,
+        "name": "RevisIT går",
+        "githubLink": "https://www.github.com/erikpersson0884/revisit-g-r",
+        "websiteLink": "https://erikpersson0884.github.io/revisit-g-r/",
+        "icon": "lyrics",
+        "languages": ["html", "css", "javascript"]
+    }
 
 
 ]
