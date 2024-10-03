@@ -69,6 +69,13 @@ let projects = [
         "websiteLink": "https://erikpersson0884.github.io/revisit-g-r/",
         "icon": "lyrics",
         "languages": ["html", "css", "javascript"]
+    },
+    {
+        priority: 8,
+        name: "Kvitto",
+        githubLink: "https://www.github.com/erikpersson0884/kvitto",
+        websiteLink: "https://erikpersson0884.github.io/kvitto/",
+        icon: "receipt",
     }
 
 
