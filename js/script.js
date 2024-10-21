@@ -18,19 +18,19 @@ function sortProjects() {
         return 0;
     });
 }
-    
+
 function createProject(project) {
     const projectHTML = `
         <li class="project">
-            <h2>
+            <header>
                 <span class="material-symbols-outlined">
                     ${project.icon}
                 </span> 
-                ${project.name}
-            </h2>
+                <h2>
+                    ${project.name}
+                </h2>
 
-
-
+            </header>
             <nav>
                 <a href="${project.githubLink}" class="githubLink">
                     Github
@@ -46,10 +46,35 @@ function createProject(project) {
 
 function populateProjects() {
     const mainDiv = document.getElementById('main');
+    const categorizedProjects = {};
 
-    mainDiv.innerHTML = `
-        ${projects.map(project => createProject(project)).join('')}
-    `;
+    projects.forEach(project => {
+        const categories = project.category || ['Others'];
+        categories.forEach(category => {
+            category = category.trim();
+            category = category.toLowerCase();
+            if (!categorizedProjects[category]) {
+                categorizedProjects[category] = [];
+            }
+            categorizedProjects[category].push(project);
+        });
+    });
+
+    const sortedCategories = Object.keys(categorizedProjects).sort((a, b) => {
+        if (a === 'others') return 1;
+        if (b === 'others') return -1;
+        return a.localeCompare(b);
+    });
+
+    mainDiv.innerHTML = sortedCategories.map(category => `
+        <section class="category">
+            <h1>${category}</h1>
+            <hr />
+            <ul>
+                ${categorizedProjects[category].map(project => createProject(project)).join('')}
+            </ul>
+        </section>
+    `).join('');
 }
 
 sortProjects();
