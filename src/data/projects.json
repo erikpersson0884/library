@@ -1,0 +1,22 @@
+[
+    {
+        "name": "screenIT2",
+        "github": "https://github.com/erikpersson0884/screenIT2",
+        "website": "https://screenit.chalmers.it"
+    },
+    {
+        "name": "strecklista",
+        "github": "https://github.com/erikpersson0884/strecklista",
+        "website": "https://strecklista.chalmers.it"
+    },
+    {
+        "name": "Portfolio",
+        "github": "https://github.com/erikpersson0884/portfolio-v2",
+        "website": "https://erik-persson.com"
+    },
+    {
+        "name": "Library",
+        "github": "https://github.com/erikpersson0884/library",
+        "website": "https://library.erik-persson.com"
+    }
+]

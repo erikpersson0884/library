@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kode+Mono:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    --background-color: #272727;
+
+    --text-color: #fff;
+    --dark-text-color: #000;
+
+    --green: #0ab42e;
+    --project-color: #000000b9;
+    --project-link-color: #dfdede;
+    --border-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font-family: Inter;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}

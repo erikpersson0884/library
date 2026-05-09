@@ -1,0 +1,70 @@
+
+
+.project {
+    background-color: var(--project-color);
+
+    font-family: 'Kode Mono';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+
+    width: 14rem;
+    height: 10em;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.project h2 {
+    font-family: 'Julius Sans One', 'sans-serif';
+
+    margin: 0;
+}
+
+.project .links {
+    font-family: 'Kode Mono';
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.project a {
+    text-decoration: none;
+
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.project .website {
+    background-color: var(--text-color);
+    color: var(--dark-text-color);
+}
+
+.project .github {
+    color: var(--green);
+
+    border: 2px solid var(--green);
+}
+
+/* Hover effect for project links */
+.project a::after {
+    content: "";
+
+    background-color: var(--green);
+
+    display: block;
+
+    width: 0%;
+    height: .1rem;
+    margin-top: .2rem;
+
+    transition: width 0.3s ease-in-out;
+}
+
+.project a:hover::after {
+    width: 100%;
+}
